@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Burgeria</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Form Pemesanan 2</h1>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="card">
+                    <img src="image/burgermenu2.png" class="card-img-top" alt="Paket 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Paket 2</h5>
+                        <p class="card-text">Burger + French Fries + Es Teh</p>
+                        <form action="proses_pemesanan.php" method="post">
+                            <div class="form-group">
+                                <label for="nama">Nama:</label>
+                                <input type="text" class="form-control" id="nama" name="nama" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telepon">Nomor Telepon:</label>
+                                <input type="tel" class="form-control" id="telepon" name="telepon" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="jumlah">Jumlah Paket:</label>
+                                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" required>
+                            </div>
+                            <input type="hidden" name="menu" value="Paket 1">
+                            <button type="button" class="btn btn-primary btn-block"><a href="verifikasi_pesanan.html" style="color: white; text-decoration: none;">Pesan Sekarang</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer py-3 bg-dark mt-5">
+        <div class="container text-center">
+            <div style="color: darkgray;">Burgeria &copy; 2024. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
